@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas y comida para ti</title>
+        
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Link to your css file -->
+	<link href="css/estil.css" rel="stylesheet">
+</head>
+
+<body>
+<form action="Exercici52b.php" method="get">
+    <section id="acercade">
+        <h2><p>Escoge la bebida y comida para generar tu pedido</p></h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/cervezacruzcampo.jpg" alt="Cerveza Cruzcampo">
+                <h3>Cerveza Cruzcampo</h3>
+                <p>1,80 €  <input type="checkbox" name="item[]" value="1.8"></p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/cervezaipacruzcampo.jpg" alt="Cerveza IPA Cruzcampo">
+                <h3>Cerveza IPA Cruzcampo</h3>
+                <p>2,90 €  <input type="checkbox" name="item[]" value="2.9"></p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/agua.jpg" alt="Agua">
+                <h3>Agua</h3>
+                <p>1,10 €  <input type="checkbox" name="item[]" value="1.1"></p> 
+            </div>
+        </div>
+           
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/copavinoblanco.jpg" alt="Copa vino blanco">
+                <h3>Copa vino blanco</h3>
+                <p>1,70 €  <input type="checkbox" name="item[]" value="1.7"></p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/copavinotinto.jpg" alt="Copa vino tinto">
+                <h3>Copa vino tinto</h3>
+                <p>1,70 €  <input type="checkbox" name="item[]" value="1.7"></p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/ensalada.jpg" alt="Agua">
+                <h3>Ensalada de la casa</h3>
+                <p>7,50 €  <input type="checkbox" name="item[]" value="7.5"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/croquetas.jpg" alt="Copa vino blanco">
+                <h3>Croquetas (3 unidades)</h3>
+                <p>4,50 €  <input type="checkbox" name="item[]" value="4.5"></p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/tabladequesos.jpg" alt="Copa vino tinto">
+                <h3>Tabla de quesos</h3>
+                <p>8,50 €  <input type="checkbox" name="item[]" value="8.5"></p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/tabladeembutidos.jpg" alt="Agua">
+                <h3>Tabla de embutidos</h3>
+                <p>9,50 €  <input type="checkbox" name="item[]" value="9.5"></p>
+            </div>
+        </div>
+
+    </section>
+            <p class="centrar"><input type="submit" value="Confirmar pedido">
+            <input type="reset" value="Borrar"></p>
+
+        </form>
+</body>
+</html>
