@@ -21,17 +21,16 @@
 
 
     foreach($item as $indice=>$valor){
-        echo "Has gastado $valor euros en: $indice <br>";
 
         $total=$total+$valor;
     }
 
-        echo "En total te has gastado $total euros. Comprovando si tienes descuento <br>";
+        echo "En total te has gastado $total euros. <br> Comprovando si tienes descuento... <br>";
 
-    if ($total<=40){
-        echo "Descuento no aplicable debido a que su pedido es inferior a 40€<br>
+    if ($total<=20){
+        echo "Descuento no aplicable debido a que su pedido es inferior a 20€<br>
         El importe total es $total €";
-    }else if ($total>40 and $total<=100){
+    }else if ($total>20 and $total<=30){
         echo "Descuento del 10% por haber gastado $total €<br>
         El precio con el descuento aplicado es: "; 
         echo discount1($total); 
